@@ -14,3 +14,8 @@ http://www.etl-tools.com/etl-tools/advanced-etl-processor-enterprise/overview.ht
 C:\sw\h2\bin>java -cp h2-1.4.193.jar org.h2.tools.RunScript -url jdbc:h2:~/testsakila;MODE=Oracle -user sa -password test123 -script c:\Users\vamsi\Downloads\oracle-sakila-db\oracle-sakila-schema.sql
 
 C:\sw\h2\bin>java -cp h2-1.4.193.jar org.h2.tools.RunScript -url jdbc:h2:~/testsakila;MODE=Oracle -user sa -password test123 -script c:\Users\vamsi\Downloads\oracle-sakila-db\oracle-sakila-insert-data.sql
+
+file will be present in home directory with testsakila in name
+
+start the tcp server with the command   java -cp ./h2-1.4.197.jar org.h2.tools.Server -tcp
+db is not opened till client connections are established. when client tries to connect, db url needs to be supplied
